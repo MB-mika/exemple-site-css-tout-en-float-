@@ -1,0 +1,32 @@
+
+/*color*/
+:root{
+
+    --blackCl:#212121;
+    --kakiClh:#958d6c;
+    --whiteCl:#ffffff;
+    --greyCl:#7f7f7f;
+    --redCl:#e64a19;
+}
+
+/*background*/
+:root{
+
+    --whiteBG:#ffffff;
+    --blackBG:#212121;
+    --greyBG:#efefef;
+
+}
+
+/* font-size*/
+:root{
+
+ --xsfs:1rem;
+ --sfs:1.2rem;
+ --mfs:1.4rem;
+ --lfs:1.6rem;
+ --xlfs:1.8rem;
+ --xxlfs:2rem;
+ --xxxlfs:2.4rem;
+
+}

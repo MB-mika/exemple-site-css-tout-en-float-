@@ -1,0 +1,377 @@
+@import url(reset.css);
+@import url(grille-float-12.css);
+@import url(root.css);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+html{
+    font-family: "Source Sans 3", serif;
+}
+
+/* _________HEADER________*/
+
+header{
+	background: var(--whiteBG);
+    position:relative;
+    z-index: 100;
+    font-size: var(--xlfs); 
+    font-family: "Source Sans 3",serif;
+    text-transform: uppercase;
+}
+
+nav, #logo{line-height: 10rem;
+            font-weight: bold;           
+}
+
+#logo .title{
+    color: var(--blackCl);
+	text-decoration: none;
+	text-align: right;  
+}
+
+#logo  span{
+    color:var(--kakiClh);
+}
+
+nav a{
+	color:var(--blackCl);
+	text-decoration: none;
+	text-align: right;
+	margin-right: 1.8rem;
+}
+nav .active{
+	color:var(--kakiClh);
+}
+
+nav a:first-of-type{margin-right:0;}
+nav a:hover{color:var(--kakiClh);}
+
+/*_____________HERO BANNER__________*/
+
+#hulk{
+    background: url(../img/header.webp)  no-repeat center center/cover;
+    height: 100rem;
+    margin-top: -10rem;
+    font-family: "Source Sans 3", serif;
+    color: var(--blackCl);
+		
+}
+#hulk h1{
+    text-align: right;
+	font-weight: 900;	
+	font-size:7.2rem;
+	margin-top: 36rem;
+    text-transform: uppercase;
+    clear:both;
+}
+
+#hulk h1::after{							
+	content:"";
+	display: inline-block;
+	width: 13.8rem;
+	height: .4rem;
+	background: var(--blackCl);
+}
+#hulk p{
+    text-align: right;
+	margin-top: 3.8rem;
+	font-size:var(--xlfs);
+	line-height:3.4rem;
+	clear: both;
+}
+.btn {
+    margin-top: 5.8rem;
+    text-align: center;
+    text-decoration: none;
+	height: 5rem;
+    width: 23.5rem;
+    color:var(--whiteBG);
+    font-size: var(--xlfs);
+    font-weight: normal;
+    background: var(--blackCl);
+    border: .2rem solid transparent;
+    padding:1.6rem 0;
+    clear: both;
+}
+.btn:hover{
+    font-weight: bold;
+    border: 0.2rem solid var(--blackCl);
+    background-color: var(--whiteCl);
+    color: var(--blackCl);
+    
+}
+
+/*___________SECTION WHO & WHY________*/
+
+#who-why {
+    background: var(--whiteBG);
+    color: var(--blackCl);
+}
+article .logo-arbre {
+    padding:10rem 56.5rem 3rem;
+}
+article h2{
+    font-family: "Source Sans 3", serif;
+    text-align: center;
+	font-weight: bold;	
+	font-size:2.7rem;
+    text-transform: capitalize;
+    padding: 0 0 5rem 0;
+    clear:both;
+    
+}
+
+article p{
+    font-family: "Source Sans 3", serif;
+    text-align: center;
+	font-size: var(--lfs);
+	line-height:3.1rem;
+    padding: 0 12rem 12rem;
+	clear: both;
+
+}
+/*__________Section bandeau ________*/
+
+
+#bandeau {
+    height: 37.5rem;
+    background-color: var(--greyBG);
+    clear: both; 
+}
+.row.cartes {
+    margin: 0 auto; 
+    padding: 8rem 0; 
+     
+}
+
+.carte{
+    width: 32%; 
+    margin: 0 1%; 	
+}
+
+.carte h3{
+    font-family: "Source Sans 3", serif;
+    text-align: left;
+	font-weight: bold;	
+	font-size:var(--lfs);
+	margin-top: 2rem;
+    text-transform: capitalize;
+    color: var(--blackCl); 
+}
+.carte p{
+    font-family: "Source Sans 3", serif;
+    text-align: left;
+	margin-top: 3.5rem;
+	font-size:var(--lfs);
+	line-height:2.4rem;
+    font-weight:normal;
+    color: var(--blackCl);
+    padding: 0rem 6.9rem 0 0;
+	
+}
+.cartes .carte:last-of-type{margin-right:0;}
+
+/*_________ SECTION BIG ARTICLE _________*/
+
+.big-article{
+    background-color: var(--whiteBG);
+    color: var(--whiteColor);
+}
+
+#big-article h2{
+    padding-top: 10.5rem;
+    font-family: "Source Sans 3", serif;
+    text-align: center;
+	font-weight: bold;	
+	font-size:2.7rem;
+    text-transform: capitalize;
+    clear:both;
+}
+
+#big-article p{
+    font-family: "Source Sans 3", serif;
+    text-align: center;
+	font-size: var(--lfs);
+	line-height:4.1rem;
+    padding: 0 18rem 10.5rem;
+	clear: both;
+}
+
+/*________ SECTION  SLIDE ________*/
+
+#slide {
+    margin-top: 0rem;
+    height: 51rem;
+    background-color: var(--whiteBG);
+    clear: both; 
+}
+#slide i{										
+	padding-top: 16.9rem;
+	padding-right: 7.9rem;
+	color:var(--blackCl);
+	font-size: 5rem;
+}
+#slide i:hover{ color: var(--kakiClh);
+}
+
+#slide .carte{
+    text-decoration: none;
+    display: block; 
+    position: relative;/* Assure que la carte est ancré  */
+    background-color: var(--blackBG);
+    width: 31%; 
+    height: 36rem;
+    margin: 0 1%; 	
+    padding: 5rem 3.5rem ;
+}
+
+#slide .carte::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* permet d'ajuster  */
+    width: 15.66%; /* taille de la barre (15.66% de 117rem) */
+    height: 0.5rem; /* hauteur de la barre*/
+    background-color: var(--redCl); /* Couleur de la barre */
+    opacity: 0; /* rend invisible */
+    transition: opacity 0.3s; /* réalise une transition douce */
+}
+#slide .carte:hover::before {
+    opacity: 1; /* s'affiche , rend visible quand on survol*/
+}
+#slide .carte h3{
+    font-family: "Source Sans 3", serif;
+    text-align: left;
+	font-weight: bold;	
+	font-size:var(--mfs);
+	margin-top: 2rem;
+    text-transform: uppercase;
+    color: var(--whiteCl);
+    
+}
+#slide .carte p{
+    font-family: "Source Sans 3", serif;
+    text-align: left;
+	margin-top: 3.5rem;
+	font-size:var(--xxxlfs);
+	line-height:2.4rem;
+    font-weight:normal;
+    color: var(--whiteCl);
+    padding: 0rem 6.9rem 0 0;
+	
+}
+.photo {
+    margin-top: 7rem; 
+   
+}
+
+.photo img.cercle {
+    width: 5rem; /* largeur img */
+    height: 5rem; /* hauteur img */
+    border-radius: 50%; /* rend l'image circulaire */
+    margin-right: 2.5rem; /*espace entre img et text*/
+}
+
+.photo-info {
+    margin-left: 5rem; /* retrait à gauche pour les paragraphes */
+}
+
+#slide .carte .photo-info p {
+    font-size: var(--mfs);  
+    text-transform: uppercase;
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+/*_______ SECTION  CLIENTS_______*/
+
+#clients-bande {
+    background: var(--greyBG);
+    color: var(--blackCl);
+    height: 36.5rem;
+    overflow: auto;
+}
+
+#clients-bande article h3{
+    font-family: "Source Sans 3", serif;
+    text-align: center;
+	font-weight: bold;	
+	font-size:2.7rem;
+    text-transform: capitalize;
+    clear:both;
+    padding: 7.9rem 0 5rem 0;
+}
+
+#clients-bande article .logo-clients img{
+    margin: 2.9rem 3.6rem 0 ;
+    width: 10rem;
+    height: 10rem;   
+}
+#clients-bande i{										
+	padding-top: 6rem;
+	padding-right: 2rem;
+	color: var(--blackCl);
+	font-size: var(--xxxlfs);	
+}
+
+#clients-bande i:hover{ color:var(--kakiClh);
+}
+
+/* __________FOOTER_______*/
+
+footer{
+	background: var(--blackBG);
+    height: 11.2rem;
+}
+
+footer .row{
+    font-family: "Source Sans 3", serif;
+    padding-top: 5rem;
+    font-size: var(--mfs);
+    color:var(--greyCl);
+}
+ #createur {	
+	text-align: left; 
+    line-height: 2rem;
+}
+#createur p:last-of-type{
+    text-transform: capitalize;
+}
+
+footer  a{
+    color:var(--greyCl);
+	text-decoration: none;
+	text-align: right;
+	margin-right: var(--xlfs);
+    text-transform: uppercase;
+
+}
+
+footer a {
+    
+    position: relative;  /*  pour réaliser un ancrage pour le positionnement du pseudo-élément */
+    color: var(--greyCl);
+    text-decoration: none;
+    text-align: right;
+    margin-right: var(--xlfs);
+    text-transform: uppercase;
+}
+
+footer a::after {
+    /*  pour créer un pseudo-élément */
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: 1.6rem;  /* décalage au-dessus du lien */
+    width: 100%; /* Largeur de la barre en rapport au lien*/
+    height: 0.3rem; 
+    background-color:var(--redCl); 
+    transform: translateX(-100%);  /* permet de cacher la barre du flus et de son démarrage*/
+    transition: transform 0.5s ease;  /* transition douce */
+    opacity: 0; /* Rends la barre invisible */
+}
+
+footer a:hover::after {
+    /* Fait glisser la barre de droite à gauche */
+    transform: translateX(0); 
+    opacity: 1; /* Rends la barre visible au survol */
+}

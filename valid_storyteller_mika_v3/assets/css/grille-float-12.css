@@ -1,0 +1,36 @@
+html{
+	font-size: 62.5%;
+}
+.row{/* equivalent wrapper*/
+	max-width:117rem;
+	margin:auto;
+}
+.row::after{/*on nettoie le float eventuel*/
+	content:"";
+	display: block;
+	clear:both;
+}
+
+[class*="col-"]{/*les classes col-*/
+	float:left;
+	
+}
+/*definit les cols*/
+[class*="col-"]:first-child{margin-left:0;}
+[class*="col-"]:last-child{margin-right:0;}
+.col-2{width:15.666666%;}
+.col-3{width:24%;}
+.col-4{width:32.333333%;}
+.col-5{width:40.666666%;}
+.col-6{width: 49%;}
+.col-7{width:57.333333%;}
+.col-8{width:65.666666%;}
+.col-9{width:74%;}
+.col-10{width:82.333333%;}
+.col-11{width:90.666666%;}
+.col-12{width: 99%;}
+
+.fl{float:left;}
+.fr{float: right;}
+.center{float:none;
+	margin:auto;}
